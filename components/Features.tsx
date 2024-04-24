@@ -29,7 +29,7 @@ const Features = () => {
             </h2>
             <ul className='mt-10 grid gap-10 md:grid-cols-2 lg:mt-20 lg:gap-20 '>
               {FEATURES.map((feature) => (
-                 <FeatureItem title={feature.title} icon={feature.icon} varaint={feature.variant} description={feature.description} />
+                 <FeatureItem title={feature.title} key={feature.title}icon={feature.icon} varaint={feature.variant} description={feature.description} />
               ))}
             </ul>
           </div>
