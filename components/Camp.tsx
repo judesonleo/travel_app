@@ -11,7 +11,7 @@ interface CampProps {
 
 const Campsite = ({backgroundimage,title,subtitle,peopleJoined}:CampProps) => {
   return (
-    <div className={`h-full w-full min-w-[1100px] ${backgroundimage} bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl`}>
+    <div className={`h-full w-full min-w-[1100px] ${backgroundimage} bg-cover bg-no-repeat lg:rounded-5xl 2xl:rounded-5xl max-container padding-container`}>
       <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
          <div className="flexCenter gap-4">
           <div className="rounded-full bg-green-50 p-4">
@@ -45,7 +45,7 @@ const Campsite = ({backgroundimage,title,subtitle,peopleJoined}:CampProps) => {
 
 const Camp = () => {
   return (
-<section className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 ">
+<section className="xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20 ">
   <div className="hide-scrollbar flex w-full items-start justify-start gap-8 h-[340px] overflow-x-auto lg:h-[400px] xl:h-[640px] ">
     <Campsite 
     backgroundimage="bg-bg-img-1"

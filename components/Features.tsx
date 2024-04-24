@@ -10,12 +10,12 @@ interface FeatureProps{
 }
 const Features = () => {
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
+    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24 max-container padding-container">
       <div className="max-container flex padding-container relative w-full justify-end">
         <div className='flex flex-1 lg:min-h-[900px ]'>
-          <Image src={'/phone.png'} alt={'phone'} width={440} height={1000} className='feature-phone'/>
+          <Image src={'/phone.png'} alt={'phone'} width={450} height={1000} className='feature-phone p-7 ml-5'/>
         </div>
-        <div className="z-20 flex w-full flex-col lg:w-[60%]">
+        <div className="z-20 flex w-full flex-col lg:w-[50%]">
           <div className="relative">
             <Image 
             src={'/camp.svg'}
